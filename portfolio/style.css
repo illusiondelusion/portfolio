@@ -4,12 +4,28 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth; 
+  }
+
 body {
     background-color: #000000;
     font-family: 'Inter', sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #bdae82;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 .container {
@@ -20,8 +36,10 @@ body {
 
 h1 {
     font-family: 'Merriweather', serif;
+    font-weight: bold;
     color: #FFFFFF;
     font-size: 60px;
+    line-height: 120px;
 }
 
 .header-container {
@@ -32,24 +50,59 @@ h1 {
   }
 
 .header-nav {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     margin-left: auto;
     padding: 20px 0;
+}
+
+.header-nav::before {
+    content: "";
+    background-image: url(./assets/svg/logo.svg);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 1px;
 }
 
 .nav-list {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     list-style: none;
 }
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+  }
 
 .section-hero {
     background-image: url('./assets/img/bg.jpg');
     background-position: center -90px;
     background-repeat: no-repeat;
+    height: 820px;
+    padding-left: 80px;
   }
+
+.hero-title {
+    padding-top: 160px;
+}
+
+.hero-text {
+    width: 470px;
+    line-height: 40px;
+}
+
+.button {
+    border: 0;
+    background-color: #bdae82;
+    font-family: inherit;
+    width: 220px;
+    height: 55px;
+    margin-top: 25px;
+    cursor: pointer;
+}
