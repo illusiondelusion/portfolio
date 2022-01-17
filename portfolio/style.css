@@ -128,6 +128,23 @@ h2 {
     color: #FFFFFF;
 }
 
+.btn-transparent {
+    border: 1px solid #BDAE82;
+    background-color: transparent;
+    color: #BDAE82;
+    font-size: inherit;
+    font-family: inherit;
+    width: 220px;
+    height: 55px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.btn-transparent:hover {
+    color: #FFFFFF;
+}
+
+
 .h-line {
     margin-left: auto;
     margin-right: auto;
@@ -140,7 +157,7 @@ h2 {
     display: inline;
     text-align: center;
     background-color: #000000;
-    padding: 0 5px;
+    padding: 0 15px;
 }
 
 .skills-items {
@@ -190,3 +207,19 @@ h2 {
     background-image: url('./assets/svg/mic.svg');
     background-size: 32px 50px;
   }
+
+.portfolio-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    gap: 5px;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
