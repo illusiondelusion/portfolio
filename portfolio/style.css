@@ -72,7 +72,7 @@ h2 {
 }
 
 .logo {
-    background-image: url(./assets/svg/logo.svg);
+    background-image: url('./assets/svg/logo.svg');
     background-repeat: no-repeat;
     width: 50px;
     height: 50px;
@@ -80,7 +80,7 @@ h2 {
 }
 
 .logo:hover {
-  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
 }
 
@@ -144,10 +144,8 @@ h2 {
     color: #FFFFFF;
 }
 
-
 .h-line {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 100px auto 0 auto;
     text-align: center;
     max-width: 50%;
     background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
@@ -222,4 +220,29 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 25px;
+}
+
+.video-player {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+.video-btn {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background-image: url('./assets/svg/video-button.svg');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    transition: 0.3s;
+}
+
+.video-btn:hover {
+    cursor: pointer;
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
 }
