@@ -9,6 +9,9 @@ html {
   }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #000000;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -307,6 +310,7 @@ h2 {
 
 .contacts-title {
     padding-top: 60px;
+    padding-bottom: 40px;
 }
 
 input {
@@ -336,7 +340,7 @@ input:focus {
     resize: none;
     width: 100%;
     height: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid #BDAE82;
     color: #BDAE82;
@@ -355,7 +359,29 @@ textarea:focus {
     padding: 20px;
 }
 
-
-.footer {
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: 150px;
 }
+
+.footer-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.icon {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+  
+.icon:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+  
