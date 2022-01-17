@@ -129,7 +129,7 @@ h2 {
 }
 
 .btn-transparent {
-    border: 1px solid #BDAE82;
+    border: 2px solid #BDAE82;
     background-color: transparent;
     color: #BDAE82;
     font-size: inherit;
@@ -245,4 +245,48 @@ h2 {
     cursor: pointer;
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
+}
+
+.price-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-top: 60px;
+}
+
+.price-item {
+    border: 2px solid #BDAE82;
+    width: 450px;
+    text-align: center;
+    padding: 43px;
+}
+
+.price-item-title {
+    display: block;
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+
+.price-item-cost {
+    display: block;
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 48px;
+    color: #BDAE82;
+    padding-bottom: 20px;
+}
+
+.price-item-description {
+    padding-bottom: 40px;
+}
+
+.price-item-text {
+    display: block;
+    font-size: 18px;
+    line-height: 36px;
 }
