@@ -135,11 +135,16 @@ h2 {
     width: 220px;
     height: 55px;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: 0.3s;
 }
 
 .btn-fill:hover {
     color: #FFFFFF;
+}
+
+.btn-fill:active {
+    background-color: #000000;
+    border: 2px solid #BDAE82;
 }
 
 .btn-transparent {
@@ -151,11 +156,15 @@ h2 {
     width: 220px;
     height: 55px;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: 0.3s;
 }
 
 .btn-transparent:hover {
     color: #FFFFFF;
+}
+
+.btn-transparent:active {
+    background-color: #BDAE82;
 }
 
 .h-line {
