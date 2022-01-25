@@ -490,6 +490,10 @@ textarea:focus {
         line-height: 74px;
         gap: 16px;
     }
+
+    .nav-link:hover {
+        font-size: 35px;  
+    }
       
       .hamburger .line {
         width: 50px;
