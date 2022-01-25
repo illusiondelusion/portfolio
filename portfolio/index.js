@@ -1,13 +1,14 @@
 const hamburger = document.querySelector('.hamburger');
+const headerNav = document.querySelector('.header-nav');
 hamburger.addEventListener('click', function() {
   this.classList.toggle('is-active');
+  headerNav.classList.toggle('nav-open');
 });
 
-const menuList = document.querySelector('.menu-list')
-menuList.addEventListener('click', function(event) {
+headerNav.addEventListener('click', function(event) {
     if (event.target.classList.contains('nav-link')) {
-      hamburger.classList.remove('hamburger.is-active');
-      menuList.classList.remove('menu-list.open');
+      hamburger.classList.remove('is-active');
+      headerNav.classList.remove('nav-open');
     }
   });
 
