@@ -497,10 +497,10 @@ textarea:focus {
       
       .hamburger .line {
         width: 50px;
-        height: 5px;
+        height: 2px;
         background-color: #ecf0f1;
         display: block;
-        margin: 8px auto;
+        margin: 10px auto;
         -webkit-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
@@ -618,13 +618,14 @@ textarea:focus {
         margin-top: 50px;
         background-image: url('./assets/img/video-player-adaptive.jpg');
         background-repeat: no-repeat;
+        background-position: center;
         height: 418px;
     }
 
     .video-btn {
         width: 65px;
         height: 65px;
-        background-size: cover;
+        background-size: contain;
     }
 
     .section-price {
@@ -683,5 +684,95 @@ textarea:focus {
         padding-bottom: 10px;
     }
 
+    }
+
+    @media (max-width: 600px) {
+
+    .nav-open {
+        width: 100%;
+        height: 600px;
+    }
+
+        
+    }
+
+    @media (max-width: 470px) {
+        
+        h2 {
+            font-size: 30px;
+        }
+
+        .header {
+            background-position: right -30px;
+        }
+
+        .header-container {
+            padding: 0 30px;
+            justify-content: space-around;
+        }
+
+        .hamburger {
+            padding-left: 7px;
+        }
+
+        .nav-list {
+            padding-left: 60px;
+            padding-top: 95px;
+        }
+
+        .section-hero {
+            padding-left: 30px;
+            background-position: top -120px right 0px;
+        }
+
+        .hero-text {
+            width: 100%;
+        }
+
+        .section-skills {
+            margin-top: 60px;
+        }
+
+        .skill-item {
+            width: 100%;
+        }
+
+        .skill-item-info {
+            width: 100%;
+        }
+
+        .section-portfolio {
+            margin-top: 15px;
+        }
+
+        .portfolio-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .price-item {
+            width: 100%;
+        }
+
+        .contacts-container {
+            width: 100%;
+        }
+
+        .btn-fill,
+        .btn-transparent {
+            width: 190px;
+        }
+
+        .btn-contacts {
+            margin: 0 auto 0 auto;
+        }
+        
+    }
+
+    @media (max-width: 275px) {
+        .btn-fill,
+        .btn-transparent {
+            width: 100%;
+        }
     }
 }
