@@ -71,7 +71,7 @@ h2 {
 
 .header-nav {
     margin-left: auto;
-    width: 500px;
+    width: 550px;
 }
 
 .logo {
@@ -104,7 +104,7 @@ h2 {
     z-index: 2;
 }
 
-.lang {
+.lang-switcher {
     width: 80px;
     font-weight: 700;
 }
@@ -136,6 +136,7 @@ h2 {
     height: 55px;
     cursor: pointer;
     transition: 0.3s;
+    color: #000000;
 }
 
 .btn-fill:hover {
@@ -789,3 +790,7 @@ textarea:focus {
         color: #000;
         background-color: #bdae82;
       }
+
+    .lang.active {
+        color: #BDAE82;
+    }
