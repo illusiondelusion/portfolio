@@ -178,7 +178,15 @@ function preloadImages() {
 preloadImages();
 
 
+function changeTheme() {
+    const lightThemeElementsSelectors = ['body', '.header', '.header-nav', '.btn-change', '.btn-change:hover', 'a', 'a:hover', 'h1', 'h2', '.logo', '.logo:hover', '.section-hero', '.btn-fill', '.btn-fill:hover', '.btn-fill:active', '.btn-transparent', '.btn-transparent:hover', '.btn-transparent:active', '.h-line', '.section-title', '.price-item-cost', '.section-contacts', 'input', 'input:focus', '.contacts-form-message', 'textarea:focus', 'input::placeholder', 'textarea::placeholder', '.icon', '.icon:hover', '.line', '.active', '.btn-price'];
+    const lightThemeElements = document.querySelectorAll(lightThemeElementsSelectors.join(', '));
+    lightThemeElements.forEach(lightThemeElement => {
+        lightThemeElement.classList.toggle('light-theme');
+    });
+}
 
-
+const changeThemeBtn = document.querySelector('.change-theme');
+changeThemeBtn.addEventListener('click', changeTheme);
 
 
